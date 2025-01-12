@@ -5,7 +5,8 @@ export default {
     },
     userInterfaceStyle: "automatic",
     ios: {
-        userInterfaceStyle: "automatic"
+        userInterfaceStyle: "automatic",
+        bundleIdentifier: "com.glowr"
     },
     android: {
         userInterfaceStyle: "automatic",
@@ -15,10 +16,10 @@ export default {
             "android.permission.FOREGROUND_SERVICE",
             "android.permission.RECORD_AUDIO"
         ],
-        package: "Glowr"
+        package: "com.glowr",
     },
     name: "Glowr",
-    slug: "Glowr",
+    slug: "glowr",
     icon: "./assets/logo3.png",
     splash: {
         image: "./assets/splash2.png",
@@ -42,9 +43,9 @@ export default {
             "expo-build-properties",
             {
                 android: {
-                    compileSdkVersion: 31,
-                    targetSdkVersion: 31,
-                    buildToolsVersion: "31.0.0",
+                    compileSdkVersion: 33,
+                    targetSdkVersion: 33,
+                    buildToolsVersion: "33.0.0",
                     multiDexEnabled: true
                 },
                 ios: {
@@ -61,7 +62,7 @@ export default {
     ],
     extra: {
         eas: {
-            projectId: "763a80fc-2338-430b-afd0-db846a0df2a1"
+            projectId: "42707fb9-b44e-448c-a22b-3d7f16155c6a"
         },
         EXPO_PUBLIC_SUPABASE_URL: process.env.EXPO_PUBLIC_SUPABASE_URL,
         EXPO_PUBLIC_SUPABASE_ANON_KEY: process.env.EXPO_PUBLIC_SUPABASE_ANON_KEY,
